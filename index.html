@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-
-        function doStuff(element){
-            element.innerHTML = "You have clicked me!";
-        }
-    </script>
 </head>
+<link rel="stylesheet" href="style.css">
 <body>
-    <button onclick="doStuff(this)"">Click Me!</button>
+    <div class="nav">
+        <h1>Dojonary</h1>
+        <input type="text" name="search" class="search-bar">
+        <button class="btn" onclick="login(this)">Login</button>
+    </div>
+    <div class="container">
+        <div class="row_1">
+            <div class="user_card">
+                <h2 class="main_search">Ninja</h2>
+                <h2 class="plural_spelling">Plural: Ninjas</h2>
+                <p class="definition">A practioner skilled in the arts of ninjitsu</p>
+                <button class="btn" onclick="message()">Likes</button>
+            </div>
+            <div class="user_card2">
+                <h2 class="main_search">Ninja</h2>
+                <h2 class="plural_spelling">Plural: Ninjas</h2>
+                <p class="definition">A programmer who breaks down problems with zen like focus</p>
+                <button class="btn" onclick="message()">Likes</button>
+            </div>
+        </div>
+        <div class="row_2">
+            <div class="dictionary_card">
+                <h3 class="dojonary"> Dojonary is defined by you!</h3>
+                <button class="btn_2">Add Definition</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
